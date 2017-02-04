@@ -6,9 +6,9 @@
     <entry>
       <title><![CDATA[鸡年大吉]]></title>
       <url>https://heady713.github.io/2017/01/27/2017dajiba/</url>
-      <content type="html"><![CDATA[<h3>Hello, 2017</h3>
+      <content type="html"><![CDATA[<h3 id="hello-2017">Hello, 2017</h3>
 <p>2017年正式加入Github Pages，开始用Markdown写博客了，相比Wordpress，除了简便还是简便。</p>
-<h3>探讨和学习</h3>
+<h3 id="探讨和学习">探讨和学习</h3>
 <p>以后将在博客内探讨和学习以下几方面的内容：</p>
 <blockquote>
 <ol>
@@ -17,7 +17,7 @@
 <li>物联网 (Internet of Things)</li>
 </ol>
 </blockquote>
-<h3>2017年的三个目标</h3>
+<h3 id="2017年的三个目标">2017年的三个目标</h3>
 <blockquote>
 <ol>
 <li>摆脱驾照本本族</li>

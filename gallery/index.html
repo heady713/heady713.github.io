@@ -1,5 +1,313 @@
-<hr>
-<p>title: gallery
-date:
-layout: gallery</p>
-<hr>
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.2.6 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            画廊 | 
+        
+        Nemo Sailing Home
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2196F3">
+    <meta name="author" content="Nemo">
+    <meta name="description" content="Live your life you love, love your life you live.">
+    <meta name="keywords" content="移动互联网 人工智能 大数据 物联网">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Nemo Sailing Home">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://heady713.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="画廊 | Nemo Sailing Home">
+    <meta property="og:description" content="Live your life you love, love your life you live.">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+    body, html {
+        font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    }
+
+    a {
+        color: #F4511E;
+    }
+
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #2196F3 !important;
+    }
+
+    /* Sidebar User Drop Down Menu Text Color */
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+        color: #2196F3 !important;
+    }
+
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+        color: #2196F3 !important;
+    }
+
+    .toTop {
+        background: #2196F3 !important;
+    }
+
+    .material-layout .material-post>.material-nav,
+    .material-layout .material-index>.material-nav,
+    .material-nav a {
+        color: #2196F3;
+    }
+
+    #scheme-Paradox .MD-burger-layer {
+        background-color: #2196F3;
+    }
+
+    #scheme-Paradox #post-toc-trigger-btn {
+        color: #2196F3;
+    }
+
+    .post-toc a:hover {
+        color: #F4511E;
+        text-decoration: underline;
+    }
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-image: url(/img/bg.jpg);
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+
+    <script src="/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/highlight/atom-one-dark.css">
+
+    <!-- UC Browser Compatible-->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write('<link rel="stylesheet" href="/css/uc.css">');
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <!-- Single Gallery Page -->
+        <link rel="stylesheet" href="/css/gallery.min.css">
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>
+                <a href="/"><strong>Nemo Sailing Home</strong></a> - 画廊
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#footer" class="icon fa-info-circle">
+                            ©&nbsp;Nemo
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/124222103/m%3D2048/37eba85271a5c358e3c73cb709cdeace" class="image"><img src="https://drscdn.500px.org/photo/124222103/m%3D2048/37eba85271a5c358e3c73cb709cdeace" alt="wallpaper001" /></a>
+                        <h2>wallpaper001</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/194414645/q%3D80_m%3D2000/a53d89312d91de4d1a92f0b52e8b8123" class="image"><img src="https://drscdn.500px.org/photo/194414645/q%3D80_m%3D2000/a53d89312d91de4d1a92f0b52e8b8123" alt="wallpaper002" /></a>
+                        <h2>wallpaper002</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/194638591/q%3D80_m%3D2000/ac4ba93341d3e0415553792d86ce1608" class="image"><img src="https://drscdn.500px.org/photo/194638591/q%3D80_m%3D2000/ac4ba93341d3e0415553792d86ce1608" alt="wallpaper003" /></a>
+                        <h2>wallpaper003</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/190164641/q%3D80_m%3D2000/0223efcf8d659e34557192d866b8d1c7" class="image"><img src="https://drscdn.500px.org/photo/190164641/q%3D80_m%3D2000/0223efcf8d659e34557192d866b8d1c7" alt="wallpaper004" /></a>
+                        <h2>wallpaper004</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/180772001/q%3D80_m%3D2000/2e88bad62974884a541d3f427202c43a" class="image"><img src="https://drscdn.500px.org/photo/180772001/q%3D80_m%3D2000/2e88bad62974884a541d3f427202c43a" alt="wallpaper005" /></a>
+                        <h2>wallpaper005</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/181958873/q%3D80_m%3D2000/7cff389cbc9f2c682c807f9e066d0e95" class="image"><img src="https://drscdn.500px.org/photo/181958873/q%3D80_m%3D2000/7cff389cbc9f2c682c807f9e066d0e95" alt="wallpaper006" /></a>
+                        <h2>wallpaper006</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://drscdn.500px.org/photo/143289521/q%3D80_m%3D2000/fd08309fc1b31a3d85188223f8b084b6" class="image"><img src="https://drscdn.500px.org/photo/143289521/q%3D80_m%3D2000/fd08309fc1b31a3d85188223f8b084b6" alt="wallpaper007" /></a>
+                        <h2>wallpaper007</h2>
+                        <p>来源500px</p>
+                    </article>
+                
+            
+        </div>
+
+        <!-- Footer -->
+        <!--
+        <footer id="footer" class="panel">
+          <div class="inner split">
+            <div>
+              <section>
+                <h2>Magna feugiat sed adipiscing</h2>
+                <p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+              </section>
+              <section>
+                <h2>Follow me on ...</h2>
+                <ul class="icons">
+                  <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                  <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                  <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="#" class="icon fa-telegram"><span class="label">Telegram</span></a></li>
+                </ul>
+              </section>
+              <p class="copyright">
+                &copy; Design: <a href="#">Gallery</a>.
+              </p>
+            </div>
+            <div>
+              <section>
+                <h2>Get in touch</h2>
+                <form method="post" action="#">
+                  <div class="field half first">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="field half">
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="field">
+                    <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+                  </div>
+                  <ul class="actions">
+                    <li><input type="submit" value="Send" class="special" /></li>
+                    <li><input type="reset" value="Reset" /></li>
+                  </ul>
+                </form>
+              </section>
+            </div>
+          </div>
+        </footer>
+        -->
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/gallery/jquery.poptrox.min.js"></script>
+    <script src="/js/gallery/skel.min.js"></script>
+    <script src="/js/gallery/util.min.js"></script>
+    <script src="/js/gallery/main.min.js"></script>
+</body>
+
+    
+</html>
