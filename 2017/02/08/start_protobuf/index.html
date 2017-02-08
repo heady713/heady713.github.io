@@ -10,7 +10,7 @@
     
     <title>
         
-            鸡年大吉 | 
+            从零开始玩转Protobuf之一 - 准备工作 | 
         
         Nemo Sailing Home
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://blog.ijita.me">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="鸡年大吉 | Nemo Sailing Home">
+    <meta property="og:title" content="从零开始玩转Protobuf之一 - 准备工作 | Nemo Sailing Home">
     <meta property="og:description" content="Live your life you love, love your life you live.">
 
     <!--[if lte IE 9]>
@@ -221,7 +221,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hello-2017"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hello, 2017</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#探讨和学习"><span class="post-toc-number">2.</span> <span class="post-toc-text">探讨和学习</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2017年的三个目标"><span class="post-toc-number">3.</span> <span class="post-toc-text">2017年的三个目标</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0x00-protobuf简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">0x00 Protobuf简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0x01-下载并编译protocol-compiler"><span class="post-toc-number">2.</span> <span class="post-toc-text">0x01 下载并编译Protocol Compiler</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0x02-编译java-runtime-library"><span class="post-toc-number">3.</span> <span class="post-toc-text">0x02 编译Java Runtime Library</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装maven"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">安装Maven</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用maven安装依赖并打包"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">使用maven安装依赖并打包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#配置classpath"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">配置CLASSPATH</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0x03-编译并运行示例"><span class="post-toc-number">4.</span> <span class="post-toc-text">0x03 编译并运行示例</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0x04-示例代码简析"><span class="post-toc-number">5.</span> <span class="post-toc-text">0x04 示例代码简析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0x05-总结"><span class="post-toc-number">6.</span> <span class="post-toc-text">0x05 总结</span></a></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -246,10 +246,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/thumbs/jiniandajiba.jpg)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/thumbs/protobuf.jpg)">
     
             <p class="article-headline-p">
-                鸡年大吉
+                从零开始玩转Protobuf之一 - 准备工作
             </p>
         </div>
 
@@ -268,7 +268,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Nemo</strong>
-        <span>2017-01-27 00:00:00</span>
+        <span>2017-02-08 11:22:12</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -289,7 +289,7 @@
         </button>
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
             <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZUlEQVR42u3aS46DQAwFQO5/6ZltpAj07P6kExWrKGGgiwXuefb199PHhYeHh4eHh4eHdxjvio/o0jdnJld7/763Njw8PLw9vOqiX795/5xj8isX1oaHh4e3kXe3rLtznm/2vLjoFV9cGx4eHt75vOfz80157754eHh438VLtshV8EGFAQ8PD29qGJEssRpJVEPhhVkLHh4eXszLm0z7P2/t7+Hh4eEFvPJIU/yyHo9xJwxd4eHh4S3gVSPa5G9HxghG1oOHh4e3h5cHqXkByAPZJAgux8F4eHh4i3lVQNKCqka0vSi5XPfw8PDwJvGqIUJyy+r4aQKYEOPi4eHhTeX1Gl3VwlAdS82jCjw8PLydvCQUGA9wn7/vbdbx8PDwPsXLt6298jCyWe+NuuLh4eGt5vVe3L1YIW+V9WB4eHh4O3nVf/jzplQUvLY26LcPCA8PD+8AXq/ZXy0/I2NYeHh4eDt51Vd5b9g0KRt5JNEcusLDw8Obypsb1D4je4Vh4dAVHh4eXovXGw6Y9ZjyUhStAQ8PD28xbzyM6G27c3Y1PsbDw8Pbw1sR2o4UiWqhwsPDw/ssbwRWLQzVeGJCYcDDw8Obysvb/L0Gf3XoqonHw8PDW8wbf+knTalZAXH0sPDw8PAW85rt+Tj2TX4dCZGbDTA8PDy8YV51jOD5nPz6eVEpRMN4eHh4G3nV131v/LS6Xc4363h4eHjfwuu1wfIIeEIYgYeHh3cwLw9w86vl41Z4eHh4+3m9ZY2HEdUQBA8PD+8EXjViSCLXPKid2wbDw8PDW837vQMPDw8PDw8PD++A4x/ILny4KnCDRAAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACWUlEQVR42u3aQW7DMAwEwPz/0+0Dirq7lKw6wfhUFHGi0UEilnx9ffTzwsPDw8PDw8PDexjvFT8/37r++/pXkneHa8PDw8M7wvvjqL38zPqmtJ+5XhseHh7eSV57fCek5LeuL4Z8bXh4eHjvxWuvitnv4uHh4X0GLznoE+pDLwY8PDy85TAiD2qTYCIvwQ9lLXh4eHgxL1/c+b+P9vfw8PDwAl490hRvwaxt9s8zZXh4eHgBLz+Ik2J31h5Ltqlos+Hh4eHdzLtu26/AZoFs/p+ipMbDw8O7jVd/UXDcJ9uXfHNesuPh4eGd4c3A+bvrwwSbY1w8PDy8Zd76QECCaQvuPOzAw8PDO8lLjuM8eG1j2RUkHh4e3jN5bazQFtntSEG09Xh4eHg38/IroV1cUlgnR3+9lXh4eHhHeO2XziLdWcTQjn/h4eHhnee118BK/NoW69FbeHh4eAd5eZN+vbzOi/X21/Hw8PDu5q2MnK60tVaabXh4eHhP4K3EE3kkkV8PeYBbjA7g4eHhbeVFr41GWtstmwXKeHh4eOd5bfsqaVOtbFkb5uLh4eH9L2/XmFS+BbORheHFgIeHh7eVN4MlDa2cMSvQ8fDw8E7y2icvslt8G/L+ull4eHh4N/NWDuWlyKAcYN0wdIWHh4e3lZcf5cnFkC9r1jbDw8PDew5vtsS84J5tX31F4eHh4b0Jb1Y6J02vDWEEHh4e3gN4bUNrF/VQSY2Hh4e3NYxIYoViKeU4Ah4eHt5zeHkEMCupVy6SurjHw8PDu5n3eQ8eHh4eHh4eHt4Dnm+lL+05kMWgfgAAAABJRU5ErkJggg==">
         </ul>
     
 
@@ -301,7 +301,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/鸡年大吉/">鸡年大吉</a>
+        <a class="post_tag-link" href="/tags/google/">google</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/java/">java</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/protobuf/">protobuf</a>
     </ul>
     
 
@@ -328,7 +328,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=鸡年大吉&url=https://blog.ijita.me//2017/01/27/2017dajiba/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=从零开始玩转Protobuf之一 - 准备工作&url=https://blog.ijita.me//2017/02/08/start_protobuf/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -337,7 +337,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=鸡年大吉&url=https://blog.ijita.me//2017/01/27/2017dajiba/index.html&via=Nemo" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=从零开始玩转Protobuf之一 - 准备工作&url=https://blog.ijita.me//2017/02/08/start_protobuf/index.html&via=Nemo" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -346,7 +346,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ijita.me//2017/01/27/2017dajiba/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ijita.me//2017/02/08/start_protobuf/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -355,7 +355,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.ijita.me//2017/01/27/2017dajiba/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.ijita.me//2017/02/08/start_protobuf/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -379,26 +379,57 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h3 id="hello-2017">Hello, 2017</h3>
-<p>2017年正式加入Github Pages，开始用Markdown写博客了，相比Wordpress，除了简便还是简便。</p>
-<h3 id="探讨和学习">探讨和学习</h3>
-<p>以后将在博客内探讨和学习以下几方面的内容：</p>
-<blockquote>
-<ol>
-<li>人工智能 (Artificial Intelligence)</li>
-<li>大数据 (Big Data)</li>
-<li>物联网 (Internet of Things)</li>
-</ol>
+        <blockquote>
+<p><strong><em>本系列文章统一使用JAVA并在MacOS上进行演绎，如遇错误请指出，期望共同学习进步</em></strong></p>
 </blockquote>
-<h3 id="2017年的三个目标">2017年的三个目标</h3>
+<h2 id="0x00-protobuf简介">0x00 Protobuf简介</h2>
+<p>Protobuf全称为<strong>Google Protocol Buffer</strong>，它是一种轻便高效的结构化数据存储格式，主要用于结构化数据串行化，很适合做数据存储或RPC数据交换格式，相比XML它更小更快更简单，它的处理时间开销、空间开销更小。</p>
+<p>首次使用时定义一种结构化数据的格式即 <strong><em>.proto文件</em></strong> ，然后使用<strong><em>Protocol Compiler</em></strong>根据此结构生成对应语言的特殊源代码，之后便能轻松地向各种数据流读写结构化数据，在后期修改了数据格式之后也不会影响旧版本的程序。</p>
+<h2 id="0x01-下载并编译protocol-compiler">0x01 下载并编译Protocol Compiler</h2>
+<p>首先下载对应的<strong><em>Protocol Compiler</em></strong>，用于编译 <strong><em>.proto文件</em></strong> 和生成给定语言操作数据流的代码。</p>
 <blockquote>
-<ol>
-<li>摆脱驾照本本族</li>
-<li>求婚并且把结婚证扯了</li>
-<li>带上妹纸出国旅游</li>
-</ol>
+<p>书写这篇文章时，Protobuf的最新版为3.2.0，可到如下地址获取相应语言的最新版本：<a href="https://github.com/google/protobuf/releases" target="_blank" rel="external">https://github.com/google/protobuf/releases</a></p>
 </blockquote>
-<p><strong>那就祝我🐥年大吉吧！</strong></p>
+<blockquote>
+<p>由于Protocol编译器是用C++开发的，需提前安装make、g++等相关工具，安装方法请自行Google。</p>
+</blockquote>
+<p>下载最新Release包：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/google/protobuf/releases/download/v3.2.0/protobuf-java-3.2.0.tar.gz</div><div class="line">tar -xzf protobuf-java-3.2.0.tar.gz</div><div class="line">cd protobuf-java-3.2.0</div></pre></td></tr></table></figure>
+<p>编译并安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">configure ## 编译三连</div><div class="line">make</div><div class="line">make install</div><div class="line"></div><div class="line">protoc --version  ## 测试Protocol编译器是否安装成功</div></pre></td></tr></table></figure>
+<blockquote>
+<p>其他各平台的详细安装方法参见protobuf-3.2.0/src/README.md</p>
+</blockquote>
+<h2 id="0x02-编译java-runtime-library">0x02 编译Java Runtime Library</h2>
+<h3 id="安装maven">安装Maven</h3>
+<p>Protobuf的Java项目采用<strong><em>maven</em></strong>进行管理，先安装maven，若已有maven环境忽略此步骤。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew install maven ## 使用brew进行安装</div><div class="line"></div><div class="line">mvn test ## 安装完maven后测试</div></pre></td></tr></table></figure>
+<h3 id="使用maven安装依赖并打包">使用maven安装依赖并打包</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd protobuf-3.2.0/java/</div><div class="line">mvn install</div><div class="line">mvn package</div></pre></td></tr></table></figure>
+<h3 id="配置classpath">配置CLASSPATH</h3>
+<p>完成上述步骤后将会在protobuf-3.2.0/java/core/target目录生成protobuf-java-3.2.0.jar包，我们将protobuf-java-3.2.0.jar加入到CLASSPATH中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">export CLASSPATH=&#123;PATH_TO_JARBALL&#125;/protobuf-3.2.0/java/core/target/protobuf-java-3.2.0.jar:$CLASSPATH  ## 请修改&#123;PATH_TO_JARBALL&#125;目录</div><div class="line"></div><div class="line">echo &apos;CLASSPATH=&#123;PATH_TO_JARBALL&#125;/protobuf-3.2.0/java/core/target/protobuf-java-3.2.0.jar:$CLASSPATH&apos; &gt; ~/.profile  ## 也可将上述代码加入~/.profile文件中</div><div class="line">source ~/.profile</div></pre></td></tr></table></figure>
+<p>到此就完成了前置依赖的安装，下面我们来真正认识protobuf。</p>
+<h2 id="0x03-编译并运行示例">0x03 编译并运行示例</h2>
+<p>执行如下命令编译示例代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd protobuf-3.2.0/examples/</div><div class="line">make java</div></pre></td></tr></table></figure>
+<p>如果一切正常将会在当前目录生成 <strong>add_person_java</strong> 和 <strong>list_people_java</strong> 两个shell脚本，其中 <strong>add_person_java</strong> 用于添加人员信息并存储到文件中，<strong>list_people_java</strong> 从文件中读取人员信息。</p>
+<p>执行add_person_java脚本录入一些信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">sh ./add_person_java</div><div class="line">Usage:  AddPerson ADDRESS_BOOK_FILE</div><div class="line"></div><div class="line">sh ./add_person_java ./person.data</div><div class="line">./person.data: File not found.  Creating a new file.</div><div class="line">Enter person ID: 1</div><div class="line">Enter name: Nemo</div><div class="line">Enter email address (blank for none): foo@gmail.com</div><div class="line">Enter a phone number (or leave blank to finish): 18012345678</div><div class="line">Is this a mobile, home, or work phone? mobile</div><div class="line">Enter a phone number (or leave blank to finish): 86260000</div><div class="line">Is this a mobile, home, or work phone? home</div><div class="line">Enter a phone number (or leave blank to finish):</div></pre></td></tr></table></figure>
+<p>程序将会在当前目录生成 <strong><em>person.data</em></strong> 文件，这个就是采用protobuf结构化之后存储的数据文件。
+执行list_people_java脚本查看之前录入的数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sh ./list_people_java ./person.data</div><div class="line">Person ID: 1</div><div class="line">  Name: Nemo</div><div class="line">  E-mail address: foo@gmail.com</div><div class="line">  Mobile phone #: 18012345678</div><div class="line">  Home phone #: 86260000</div></pre></td></tr></table></figure>
+<h2 id="0x04-示例代码简析">0x04 示例代码简析</h2>
+<p>上面我们完整的演示了Protobuf将结构化数据写入文件和从文件中读取结构化数据的示例，那么这过程是如何完成的呢？</p>
+<p>示例中使用了 <strong><em>addressbook.proto</em></strong> 文件定义了相应的包名、类名、以及Person和AddressBook两种协议：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> tutorial;</div><div class="line"></div><div class="line">option java_package = <span class="string">"com.example.tutorial"</span>;</div><div class="line">option java_outer_classname = <span class="string">"AddressBookProtos"</span>;</div><div class="line"></div><div class="line">message Person &#123;</div><div class="line">  string name = <span class="number">1</span>;</div><div class="line">  int32 id = <span class="number">2</span>;  <span class="comment">// Unique ID number for this person.</span></div><div class="line">  string email = <span class="number">3</span>;</div><div class="line"></div><div class="line">  <span class="keyword">enum</span> PhoneType &#123;</div><div class="line">    MOBILE = <span class="number">0</span>;</div><div class="line">    HOME = <span class="number">1</span>;</div><div class="line">    WORK = <span class="number">2</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  message PhoneNumber &#123;</div><div class="line">    string number = <span class="number">1</span>;</div><div class="line">    PhoneType type = <span class="number">2</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  repeated PhoneNumber phones = <span class="number">4</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Our address book file is just one of these.</span></div><div class="line">message AddressBook &#123;</div><div class="line">  repeated Person people = <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Protobuf会根据 <strong><em>addressbook.proto</em></strong> 文件中的内容生成相应的java class，即protobuf-3.2.0/examples/com/example/tutorial/AddressBookProtos.java文件，此AddressBookProtos类包含了一系列Person和AddressBook类的操作，用于读取和写入数据，可以理解为Protobuf根据定义的数据结构封装的数据操作。</p>
+<p><strong><em>add_person</em></strong> 主要是将用户输入存储到文件，addPeople()方法增加people数据，build()方法将数据序列化，核心代码片段：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">AddressBook.Builder addressBook = AddressBook.newBuilder();</div><div class="line"></div><div class="line"><span class="keyword">try</span> &#123;</div><div class="line">  FileInputStream input = <span class="keyword">new</span> FileInputStream(args[<span class="number">0</span>]);</div><div class="line">  <span class="keyword">try</span> &#123;</div><div class="line">    addressBook.mergeFrom(input);</div><div class="line">  &#125; <span class="keyword">finally</span> &#123;</div><div class="line">    <span class="keyword">try</span> &#123; input.close(); &#125; <span class="keyword">catch</span> (Throwable ignore) &#123;&#125;</div><div class="line">  &#125;</div><div class="line">&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</div><div class="line">  System.out.println(args[<span class="number">0</span>] + <span class="string">": File not found.  Creating a new file."</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">addressBook.addPeople(</div><div class="line">  PromptForAddress(<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(System.in)),</div><div class="line">                   System.out));</div><div class="line"></div><div class="line">FileOutputStream output = <span class="keyword">new</span> FileOutputStream(args[<span class="number">0</span>]);</div><div class="line"><span class="keyword">try</span> &#123;</div><div class="line">  addressBook.build().writeTo(output);</div><div class="line">&#125; <span class="keyword">finally</span> &#123;</div><div class="line">  output.close();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong><em>list_people</em></strong> 从文件中读取已序列化的二进制数据，getPeopleList()获取people列表数据，getId()和getName()为获取属性值方法，核心代码片段：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (Person person: addressBook.getPeopleList()) &#123;</div><div class="line">  System.out.println(<span class="string">"Person ID: "</span> + person.getId());</div><div class="line">  System.out.println(<span class="string">"  Name: "</span> + person.getName());</div><div class="line">  <span class="keyword">if</span> (!person.getEmail().isEmpty()) &#123;</div><div class="line">    System.out.println(<span class="string">"  E-mail address: "</span> + person.getEmail());</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">for</span> (Person.PhoneNumber phoneNumber : person.getPhonesList()) &#123;</div><div class="line">    <span class="keyword">switch</span> (phoneNumber.getType()) &#123;</div><div class="line">      <span class="keyword">case</span> MOBILE:</div><div class="line">        System.out.print(<span class="string">"  Mobile phone #: "</span>);</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">      <span class="keyword">case</span> HOME:</div><div class="line">        System.out.print(<span class="string">"  Home phone #: "</span>);</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">      <span class="keyword">case</span> WORK:</div><div class="line">        System.out.print(<span class="string">"  Work phone #: "</span>);</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">    System.out.println(phoneNumber.getNumber());</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="0x05-总结">0x05 总结</h2>
+<p>虽然Protobuf相比于XML和Json，其可读性差、缺乏自我描述，在通用性上也不及后两者普及，但它具有更高的效率，体积更小，并且能够自动生成对应语言的特殊源代码便于开发。</p>
 
     
 
@@ -420,7 +451,7 @@
     $('html').ready(function() {
         setTimeout(function() {
             var disqus_config = function () {
-                this.page.url = 'https://blog.ijita.me/2017/01/27/2017dajiba/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.url = 'https://blog.ijita.me/2017/02/08/start_protobuf/index.html';  // Replace PAGE_URL with your page's canonical URL variable
                 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
 
@@ -451,19 +482,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/02/08/start_protobuf/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2017/01/27/2017dajiba/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
