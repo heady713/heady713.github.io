@@ -10,7 +10,7 @@
     
     <title>
         
-            MacOS10.12下RStudio载入rJava出错的解决方法 | 
+            标签: rJava | 
         
         Nemo Sailing Home
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://blog.ijita.me">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="MacOS10.12下RStudio载入rJava出错的解决方法 | Nemo Sailing Home">
+    <meta property="og:title" content="标签: rJava | Nemo Sailing Home">
     <meta property="og:description" content="Live your life you love, love your life you live.">
 
     <!--[if lte IE 9]>
@@ -195,281 +195,89 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
 
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
-
-    <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运行环境"><span class="post-toc-number">1.</span> <span class="post-toc-text">运行环境</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#错误信息"><span class="post-toc-number">2.</span> <span class="post-toc-text">错误信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解决方法"><span class="post-toc-number">3.</span> <span class="post-toc-text">解决方法</span></a></li></ol>
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
-    </ul>
-
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+        
+            <!-- Paradox Thumbnail -->
+            <div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script>
-    var randomNum = Math.floor(Math.random() * 5 + 1);
-
-    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
-</script>
-
-        
-    
-            <p class="article-headline-p">
-                MacOS10.12下RStudio载入rJava出错的解决方法
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Nemo</strong>
-        <span>2017-02-14 00:18:16</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">devices other</i>
-            <span class="visuallyhidden">devices other</span>
-        </button>
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACb0lEQVR42u3awXKDMAwE0Pz/T7fXHgpZWViEzOPENDT242Ara71+vvp64eHh4eHh4eHhfRjvFV//fNGfvx89czTW+bd15oaHh4c3w0umVf00/6/kPh8dDw8Pb5J3tOCe358/n491tDFUx8LDw8N7Ii9Z4tfGxcPDw3s67zxuKIcIeHh4eA/k5cHBedF8vg0k0e1tWQseHh5ezMsX8fn70fM9PDw8vIBXbmkqthGsleCtGeLh4eFt5uULccLOG6fyV1OdDx4eHt5uXr7EVxf6apxxVL6XGw7w8PDwBnnJAJct38U4uBAl4+Hh4Y3wqgdUa41Weamdl+bRxoCHh4e3gbfWLlANEfIyPW+3wsPDw5vnJaFA/0isuqlUo2E8PDy8SV5e7CZBQzVyXYsq3rxWPDw8vM28pOTNy+hOG0GnjMbDw8Ob51WL43wSedPVGqnwiwEPDw/vIt5V5e9aLFsNI6JQGA8PD28zrxqVVjeA5DVVX0frFwMeHh5em3fVot95HZ1GBDw8PLy7ePlg+VFZfqyVhxHRrPDw8PA289YCiGqYWw1kW+U4Hh4e3ggv3wDy47F+4FuNffHw8PDu4u0++loLMvJgAg8PD2+el4cU+faQNF1VA44L9j08PDy8JV4/eqg2VK21BSTBLh4eHt4Mr984lRxZ5cVx3kxwOB88PDy8EV4eOqw9Xy2mqxsSHh4e3l28tZbTqxoF8o3qzcvFw8PDexQviSTyUvuyMAIPDw/vA3j9w7M1ahSO4OHh4Q3y+s1V/fB3rfkADw8Pb56XRwDVSUTBazHgeNNkgIeHh7eZ930XHh4eHh4eHh7eB1y/dclT71Uf5WsAAAAASUVORK5CYII=">
-        </ul>
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/R/">R</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/RJDBC/">RJDBC</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/rJava/">rJava</a>
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-        
-            <!-- Busuanzi Views -->
-            <a class="post_share-link" href="#">
-                <li class="mdl-menu__item">
-                    <span id="busuanzi_container_page_pv">
-                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
-                    </span>
-                </li>
-            </a>
         
     
 
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=MacOS10.12下RStudio载入rJava出错的解决方法&url=https://blog.ijita.me//2017/02/14/rjava-error/index.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=MacOS10.12下RStudio载入rJava出错的解决方法&url=https://blog.ijita.me//2017/02/14/rjava-error/index.html&via=Nemo" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ijita.me//2017/02/14/rjava-error/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.ijita.me//2017/02/14/rjava-error/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-</div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <h2 id="运行环境">运行环境</h2>
-<p><code>macOS Sierra 10.12.3</code></p>
-<p><code>jdk1.7.0_79</code></p>
-<p><code>R version 3.3.2 (2016-10-31)</code></p>
-<h2 id="错误信息">错误信息</h2>
-<p>在<code>R</code>或者<code>RStudio</code>中载入依赖<code>rJava</code>的包后会抛出如下错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">JavaVM: requested Java version ((null)) not available. Using Java at &quot;&quot; instead.</div><div class="line">JavaVM: Failed to load JVM: /bundle/Libraries/libserver.dylib</div><div class="line">JavaVM FATAL: Failed to load the jvm library.</div><div class="line">Error in .jinit() : JNI_GetCreatedJavaVMs returned -1</div></pre></td></tr></table></figure>
-<h2 id="解决方法">解决方法</h2>
-<p>在终端中执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln -s $(/usr/libexec/java_home)/jre/lib/server/libjvm.dylib /usr/local/lib</div><div class="line">sudo R CMD javareconf</div></pre></td></tr></table></figure>
-<p>在R中执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">install.packages(&quot;rJava&quot;,type=&apos;source&apos;)</div></pre></td></tr></table></figure>
-
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-
-
-    <!-- 使用 DISQUS -->
-    <div id="disqus-comment">
-        <div id="disqus_thread"></div>
-<script>
-    $('html').ready(function() {
-        setTimeout(function() {
-            var disqus_config = function () {
-                this.page.url = 'https://blog.ijita.me/2017/02/14/rjava-error/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document;
-                var s = d.createElement('script');
-                s.src = '//nemosailing.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', + new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        },1500);
-    });
-</script>
-
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2017/02/14/rjava-error/">MacOS10.12下RStudio载入rJava出错的解决方法</a></p>
     </div>
-    <style>
-        #disqus-comment{
-            background-color: #eee;
-            padding: 2pc;
-        }
-    </style>
 
-
-                
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            运行环境
+macOS Sierra 10.12.3
+jdk...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/02/14/rjava-error/" target="_self">继续阅读</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Nemo's avatar">
             </div>
+            <div>
+                <strong>Nemo</strong>
+                <span>2月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                <a class="post_category-link" href="/categories/杂乱无章/">杂乱无章</a>
+            </span>
 
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
+            
 
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="/2017/02/08/start_protobuf/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
         </div>
     </div>
+</div>
 
+        
+        
+    
+
+    
+
+    
+        <script>
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 5 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')')
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
 
 
                     
@@ -630,14 +438,6 @@
 </aside>
 
                     
-
-                    
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 

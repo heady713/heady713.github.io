@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[MacOS10.12下RStudio载入rJava错误解决方法]]></title>
+      <title><![CDATA[MacOS10.12下RStudio载入rJava出错的解决方法]]></title>
       <url>https://blog.ijita.me/2017/02/14/rjava-error/</url>
       <content type="html"><![CDATA[<h2 id="运行环境">运行环境</h2>
 <p><code>macOS Sierra 10.12.3</code></p>
